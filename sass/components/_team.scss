@@ -1,0 +1,51 @@
+.team__title {
+  margin-bottom: 50px;
+  @include secondary-heading;
+}
+
+.team__list {
+  display: flex;
+}
+
+.team__item {
+  flex-basis: calc((100% - 90px) / 4);
+  background: $LightBackgroundColor;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__list .team__item + .team__item {
+  margin-left: 30px;
+}
+
+.team__description {
+  padding: 30px 61px 16px;
+}
+
+.team__caption,
+.team__position {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+}
+
+.team__caption {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+
+  font-weight: 500;
+  color: $PrimaryHeadingColor;
+}
+
+.team__position {
+  color: $MainTextColor;
+}
+
+.team__social {
+  margin-bottom: 30px;
+  margin-left: 32px;
+  margin-right: 32px;
+}

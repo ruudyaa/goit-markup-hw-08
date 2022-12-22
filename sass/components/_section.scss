@@ -1,0 +1,12 @@
+.section {
+  padding: 94px 0px;
+  background-color: $LightBackgroundColor;
+}
+
+.section--no-padding {
+  padding-top: 0;
+}
+
+.section--gray-bg {
+  background-color: $CinereousBackgroundColor;
+}

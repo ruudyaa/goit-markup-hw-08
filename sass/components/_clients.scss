@@ -1,0 +1,36 @@
+.clients__title {
+  margin-bottom: 50px;
+  @include secondary-heading;
+}
+
+.clients__list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.clients__link {
+  @include flex-align-justify;
+  height: 92px;
+  width: 170px;
+  color: $FourthLinkColor;
+  border: 1px solid $SecondaryBorderColor;
+  border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $AccentColor;
+    color: $AccentColor;
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    fill: currentColor;
+  }
+}

@@ -1,0 +1,29 @@
+.header__list {
+  display: flex;
+  margin-left: auto;
+}
+
+.header__list .header__item + .header__item {
+  margin-left: 50px;
+}
+
+.header__link {
+  @include flex-align;
+  @include header-link;
+
+  color: $SecondLinkColor;
+
+  &:hover,
+  &:focus {
+    color: $AccentColor;
+  }
+}
+
+.header__icon {
+  fill: currentColor;
+  margin-right: 10px;
+
+  &:hover {
+    fill: currentColor;
+  }
+}

@@ -1,0 +1,108 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $DarkBackgroundColor;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__address {
+  margin-right: 69px;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__link {
+  font-style: normal;
+  line-height: calc(24 / 14);
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $AccentColor;
+  }
+}
+
+.footer__link--light {
+  color: $ThirdLinkColor;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+  @include additional-heading;
+  color: $SecondaryHeadingColor;
+}
+
+.footer__form {
+  margin-left: auto;
+}
+
+.subscription-form__label {
+  display: block;
+  margin-bottom: 20px;
+  @include additional-heading;
+  color: $SecondaryHeadingColor;
+}
+
+.subscription-form__field {
+  display: flex;
+}
+
+.subscription-form__field .subscription-form__input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: none;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+  color: $SecondaryHeadingColor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: none;
+
+  &:focus,
+  &:hover {
+    border: 1px solid $AccentColor;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscription-form__btn {
+  @include flex-align;
+  @include accent-btn;
+  padding-left: 28px;
+  padding-right: 28px;
+  height: 50px;
+
+  &:hover,
+  &:focus {
+    @include accent-btn-hover;
+  }
+}
+
+.subscription-form__icon {
+  fill: currentColor;
+  margin-left: 12px;
+}

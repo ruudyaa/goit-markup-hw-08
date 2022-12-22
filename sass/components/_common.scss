@@ -1,0 +1,23 @@
+body {
+  font-family: $MainFont;
+  font-size: 14px;
+  color: $MainTextColor;
+  background-color: $LightBackgroundColor;
+  letter-spacing: 0.03em;
+}
+
+%button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+
+  color: $BtnTextColor;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  border-width: 0;
+  cursor: pointer;
+}

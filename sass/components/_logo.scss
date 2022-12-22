@@ -1,0 +1,16 @@
+.logo {
+  display: block;
+  font-family: $LogoFont;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  color: $AccentColor;
+}
+
+.logo--dark {
+  color: $FirstLogoColor;
+}
+
+.logo--light {
+  color: $SecondLogoColor;
+}

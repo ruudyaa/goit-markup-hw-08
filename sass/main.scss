@@ -1,0 +1,26 @@
+@import "./components/reset";
+@import "./utils/variables.scss";
+@import "./utils/mixin";
+
+@import "./components/container";
+@import "./components/section";
+@import "./components/common";
+
+@import "./components/logo";
+@import "./components/header";
+@import "./components/navigation";
+@import "./components/contacts";
+
+@import "./components/hero";
+@import "./components/benefits";
+@import "./components/products";
+@import "./components/team";
+@import "./components/social";
+
+@import "./components/clients.scss";
+@import "./components/footer";
+
+@import "./components/button-set";
+@import "./components/portfolio-page";
+
+@import "./components/modal";
