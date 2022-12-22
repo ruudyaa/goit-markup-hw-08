@@ -382,6 +382,15 @@ body {
   line-height: 1.7142857143;
 }
 
+.products {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .products {
+    display: contents;
+  }
+}
+
 .products__title {
   margin-bottom: 50px;
   font-size: 36px;

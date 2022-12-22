@@ -1,3 +1,11 @@
+.products {
+  display: none;
+
+  @include desktop {
+    display: contents;
+  }
+}
+
 .products__title {
   margin-bottom: 50px;
   @include secondary-heading;
