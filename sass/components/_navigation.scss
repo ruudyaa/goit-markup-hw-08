@@ -4,6 +4,10 @@
   padding-top: 0;
   padding-bottom: 0;
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }

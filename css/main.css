@@ -92,6 +92,8 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1923076923;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: #2196f3;
 }
 
@@ -154,6 +156,11 @@ body {
   padding-top: 0;
   padding-bottom: 0;
 }
+@media screen and (max-width: 767px) {
+  .navigation__list {
+    display: none;
+  }
+}
 @media screen and (min-width: 1200px) {
   .navigation__list {
     margin-left: 93px;
@@ -211,18 +218,19 @@ body {
 }
 
 .header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .header__list {
-    display: inline-block;
+    display: none;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
   }
 }
 
@@ -234,6 +242,7 @@ body {
 @media screen and (min-width: 1200px) {
   .header__item:first-child {
     margin-right: 50px;
+    margin-bottom: 0;
   }
 }
 .header__link {
@@ -264,11 +273,150 @@ body {
 }
 
 .header__icon {
-  fill: currentColor;
-  margin-right: 10px;
+  margin-right: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .header__icon {
+    margin-right: 10px;
+  }
 }
 .header__icon:hover {
   fill: currentColor;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 5;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #ffffff;
+  overflow-y: scroll;
+}
+
+.mobile-menu.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.mobile-menu__btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu__btn:hover, .mobile-menu__btn:focus {
+  fill: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu__btn {
+    display: none;
+  }
+}
+
+.mobile-menu-nav {
+  margin-bottom: 302px;
+}
+
+.mobile-menu-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-nav__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.mobile-menu-nav__link:hover, .mobile-menu-nav__link:focus {
+  color: #2196f3;
+}
+
+.mobile-menu-nav__link--current {
+  color: #2196f3;
+}
+
+.mobile-menu-contacts {
+  margin-top: auto;
+  margin-bottom: 64px;
+}
+
+.mobile-menu-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-contacts__phone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobile-menu-contacts__email {
+  color: #757575;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.mobile-menu-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mobile-menu-social__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.mobile-menu-social__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.mobile-menu-social__link::after {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 1px;
+  margin-left: 10px;
+}
+.mobile-menu-social__item:not(:last-child) .mobile-menu-social__link::after {
+  background-color: #2196f3;
 }
 
 .overlay {
