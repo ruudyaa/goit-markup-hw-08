@@ -1,17 +1,37 @@
 .clients__title {
-  margin-bottom: 50px;
-  @include secondary-heading;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: $PrimaryHeadingColor;
+
+  @include desktop {
+    margin-bottom: 50px;
+    @include secondary-heading;
+  }
 }
 
 .clients__list {
   display: flex;
-  column-gap: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.clients__item {
+  flex-basis: calc((100% - 60px) / 2);
+
+  @include tablet {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+
+  @include desktop {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__link {
   @include flex-align-justify;
   height: 92px;
-  width: 170px;
   color: $FourthLinkColor;
   border: 1px solid $SecondaryBorderColor;
   border-radius: 4px;
