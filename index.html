@@ -326,6 +326,10 @@
             <li class="products__item">
               <div class="products__wrap">
                 <img
+                  srcset="
+                    ./images/computer-desc@1x.jpg 1x,
+                    ./images/computer-desc@2x.jpg 2x
+                  "
                   src="./images/computer.jpg"
                   alt="Розробка комп'ютерних застосунків"
                   width="370"
@@ -336,6 +340,10 @@
             <li class="products__item">
               <div class="products__wrap">
                 <img
+                  srcset="
+                    ./images/phone-desc@1x.jpg 1x,
+                    ./images/phone-desc@2x.jpg 2x
+                  "
                   src="./images/phone.jpg"
                   alt="Розробка мобільних застосунків"
                   width="370"
@@ -346,6 +354,10 @@
             <li class="products__item">
               <div class="products__wrap">
                 <img
+                  srcset="
+                    ./images/tablet-desc@1x.jpg 1x,
+                    ./images/tablet-desc@2x.jpg 2x
+                  "
                   src="./images/tablet.jpg"
                   alt="Розробка застосунків для планшетів"
                   width="370"
@@ -362,10 +374,38 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                src="./images/first-person.jpg"
-                alt="Ігор Дем'яненко - Product Designer"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ihor-demyanenko-desc@1x.jpg 1x,
+                    ./images/ihor-demyanenko-desc@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/ihor-demyanenko-tab@1x.jpg 1x,
+                    ./images/ihor-demyanenko-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ihor-demyanenko-mob@1x.jpg 1x,
+                    ./images/ihor-demyanenko-mob@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  srcset="
+                    ./images/ihor-demyanenko-desc@1x.jpg 1x,
+                    ./images/ihor-demyanenko-desc@2x.jpg 2x
+                  "
+                  src="./images/ihor-demyanenko-desc@1x.jpg"
+                  alt="Ігор Дем'яненко - Product Designer"
+                />
+              </picture>
+
               <div class="team__description">
                 <h3 class="team__caption">Ігор Дем'яненко</h3>
                 <p lang="en" class="team__position">Product Designer</p>
@@ -403,10 +443,38 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/second-person.jpg"
-                alt="Ольга Рєпіна - Frontend Developer"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/olga-repina-desc@1x.jpg 1x,
+                    ./images/olga-repina-desc@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/olga-repina-tab@1x.jpg 1x,
+                    ./images/olga-repina-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/olga-repina-mob@1x.jpg 1x,
+                    ./images/olga-repina-mob@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  srcset="
+                    ./images/olga-repina-desc@1x.jpg 1x,
+                    ./images/olga-repina-desc@2x.jpg 2x
+                  "
+                  src="./images/olga-repina-desc@1x.jpg"
+                  alt="Ольга Рєпіна - Frontend Developer"
+                />
+              </picture>
+
               <div class="team__description">
                 <h3 class="team__caption">Ольга Рєпіна</h3>
                 <p lang="en" class="team__position">Frontend Developer</p>
@@ -444,10 +512,38 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/third-person.jpg"
-                alt="Микола Тарасов - Marketing"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mykola-tarasov-desc@1x.jpg 1x,
+                    ./images/mykola-tarasov-desc@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykola-tarasov-tab@1x.jpg 1x,
+                    ./images/mykola-tarasov-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykola-tarasov-mob@1x.jpg 1x,
+                    ./images/mykola-tarasov-mob@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  srcset="
+                    ./images/mykola-tarasov-desc@1x.jpg 1x,
+                    ./images/mykola-tarasov-desc@2x.jpg 2x
+                  "
+                  src="./images/mykola-tarasov-desc@1x.jpg"
+                  alt="Микола Тарасов - Marketing"
+                />
+              </picture>
+
               <div class="team__description">
                 <h3 class="team__caption">Микола Тарасов</h3>
                 <p lang="en" class="team__position">Marketing</p>
@@ -485,10 +581,37 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/fourth-person.jpg"
-                alt="Михайло Єрмаков - UI Designer"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mykhailo-yermakov-desc@1x.jpg 1x,
+                    ./images/mykhailo-yermakov-desc@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykhailo-yermakov-tab@1x.jpg 1x,
+                    ./images/mykhailo-yermakov-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykhailo-yermakov-mob@1x.jpg 1x,
+                    ./images/mykhailo-yermakov-mob@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  srcset="
+                    ./images/mykhailo-yermakov-desc@1x.jpg 1x,
+                    ./images/mykhailo-yermakov-desc@2x.jpg 2x
+                  "
+                  src="./images/mykhailo-yermakov-desc@1x.jpg"
+                  alt="Михайло Єрмаков - UI Designer"
+                />
+              </picture>
               <div class="team__description">
                 <h3 class="team__caption">Михайло Єрмаков</h3>
                 <p lang="en" class="team__position">UI Designer</p>
