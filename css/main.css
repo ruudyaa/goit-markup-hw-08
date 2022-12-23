@@ -434,34 +434,64 @@ body {
 }
 
 .team__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 33px;
   text-align: center;
+  margin-bottom: 30px;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.1666666667;
+    text-align: center;
+    color: #212121;
+  }
 }
 
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
 }
 
 .team__item {
-  -ms-flex-preferred-size: calc((100% - 90px) / 4);
-      flex-basis: calc((100% - 90px) / 4);
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
-.team__list .team__item + .team__item {
-  margin-left: 30px;
+@media screen and (max-width: 767px) {
+  .team__item .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .team__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
+}
 .team__description {
-  padding: 30px 61px 16px;
+  padding: 30px 70px 16px;
+}
+@media screen and (min-width: 1200px) {
+  .team__description {
+    padding: 30px 61px 16px;
+  }
 }
 
 .team__caption,
@@ -485,9 +515,23 @@ body {
 }
 
 .team__social {
-  margin-bottom: 30px;
-  margin-left: 32px;
-  margin-right: 32px;
+  margin-right: 122px;
+  margin-left: 122px;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .team__social {
+    margin-right: 74px;
+    margin-left: 74px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__social {
+    margin-bottom: 30px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
 }
 
 .social {
