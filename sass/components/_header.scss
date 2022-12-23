@@ -9,10 +9,6 @@
 .header__list {
   display: flex;
   margin-left: auto;
-
-  & .header__item + .header__item {
-    margin-left: 50px;
-  }
 }
 
 .header__link {

@@ -1,17 +1,37 @@
 .header__list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
   margin-left: auto;
 }
 
-.header__list .header__item + .header__item {
-  margin-left: 50px;
+@media screen and (min-width: 768px) {
+  .header__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__item:first-child {
+    margin-right: 50px;
+  }
 }
 
 .header__link {
   @include flex-align;
-  @include header-link;
-
+  font-weight: 500;
+  font-size: 12px;
+  line-height: (14 / 12);
+  letter-spacing: 0.02em;
   color: $SecondLinkColor;
+
+  @media screen and (min-width: 1200px) {
+    @include header-link;
+  }
 
   &:hover,
   &:focus {
