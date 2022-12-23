@@ -1,6 +1,10 @@
 .section {
-  padding: 94px 0px;
+  padding: 60px 0px;
   background-color: $LightBackgroundColor;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0px;
+  }
 }
 
 .section--no-padding {

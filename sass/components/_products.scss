@@ -1,8 +1,6 @@
 .products {
-  display: none;
-
-  @include desktop {
-    display: contents;
+  @media screen and (max-width: 1190px) {
+    display: none;
   }
 }
 
