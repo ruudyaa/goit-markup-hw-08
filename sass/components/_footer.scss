@@ -6,11 +6,41 @@
 
 .footer__container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+.footer__boxes {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0;
+  }
 }
 
 .footer__address {
-  margin-right: 69px;
+  margin-right: 70px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer__logo {
@@ -40,31 +70,56 @@
 }
 
 .footer__title {
+  text-align: center;
   margin-bottom: 20px;
   @include additional-heading;
   color: $SecondaryHeadingColor;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer__form {
-  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+
+.subscription-form {
+  justify-content: center;
 }
 
 .subscription-form__label {
   display: block;
+  text-align: center;
   margin-bottom: 20px;
   @include additional-heading;
   color: $SecondaryHeadingColor;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .subscription-form__field {
-  display: flex;
+  display: block;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .subscription-form__field .subscription-form__input {
-  width: 358px;
-  height: 50px;
+  // width: 358px;
+  // width: 450px;
+  // height: 50px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 450px;
+  width: 100%;
+  margin-bottom: 20px;
   padding: 15px 16px;
-  margin-right: 12px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -76,6 +131,11 @@
   color: $SecondaryHeadingColor;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   outline: none;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
 
   &:focus,
   &:hover {
@@ -90,11 +150,17 @@
 }
 
 .subscription-form__btn {
+  display: block;
   @include flex-align;
   @include accent-btn;
   padding-left: 28px;
   padding-right: 28px;
   height: 50px;
+
+  @media screen and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   &:hover,
   &:focus {

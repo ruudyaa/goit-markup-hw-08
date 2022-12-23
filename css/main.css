@@ -649,13 +649,63 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+.footer__boxes {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-bottom: 0;
+  }
 }
 
 .footer__address {
-  margin-right: 69px;
+  margin-right: 70px;
+}
+@media screen and (max-width: 767px) {
+  .footer__address {
+    margin-bottom: 60px;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer__address {
+    text-align: center;
+  }
 }
 
 .footer__logo {
@@ -683,6 +733,7 @@ body {
 }
 
 .footer__title {
+  text-align: center;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -690,13 +741,27 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    text-align: left;
+  }
+}
 
-.footer__form {
-  margin-left: auto;
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    margin-left: auto;
+  }
+}
+
+.subscription-form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .subscription-form__label {
   display: block;
+  text-align: center;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -704,18 +769,33 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (min-width: 1200px) {
+  .subscription-form__label {
+    text-align: left;
+  }
+}
 
 .subscription-form__field {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .subscription-form__field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .subscription-form__field .subscription-form__input {
-  width: 358px;
-  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 450px;
+  width: 100%;
+  margin-bottom: 20px;
   padding: 15px 16px;
-  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -728,6 +808,12 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   outline: none;
+}
+@media screen and (min-width: 1200px) {
+  .subscription-form__field .subscription-form__input {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 .subscription-form__field .subscription-form__input:focus, .subscription-form__field .subscription-form__input:hover {
   border: 1px solid #2196f3;
@@ -759,6 +845,7 @@ body {
 }
 
 .subscription-form__btn {
+  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -787,6 +874,12 @@ body {
   padding-left: 28px;
   padding-right: 28px;
   height: 50px;
+}
+@media screen and (max-width: 1199px) {
+  .subscription-form__btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .subscription-form__btn:hover, .subscription-form__btn:focus {
   background-color: #188ce8;
