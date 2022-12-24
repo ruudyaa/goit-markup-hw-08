@@ -26,10 +26,15 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
   position: relative;
 
   @include header-link;
   color: $FirstLinkColor;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -37,7 +42,7 @@
   }
 }
 
-.navigation__link--active {
+.navigation__list .navigation__link--active {
   color: $AccentColor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
