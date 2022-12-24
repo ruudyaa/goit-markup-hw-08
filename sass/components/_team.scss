@@ -12,12 +12,19 @@
 }
 
 .team__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    column-gap: 30px;
+  }
 }
 
 .team__item {
+  padding-bottom: 24px;
   background: $LightBackgroundColor;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -42,6 +49,24 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+// .team__image {
+//   @media screen and (min-width: 768px) {
+//     width: 354px;
+//     height: 374px;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     width: 270px;
+//     height: 260px;
+//   }
+// }
+
 .team__caption,
 .team__position {
   font-size: 16px;
@@ -65,12 +90,15 @@
   color: $MainTextColor;
 }
 
-.team__social {
-  margin-bottom: 24px;
+// .team__social {
+//   @include tablet {
+//     margin-left: 74px;
+//     margin-right: 74px;
+//   }
 
-  @include desktop {
-    margin-bottom: 30px;
-    margin-left: 32px;
-    margin-right: 32px;
-  }
-}
+//   @include desktop {
+//     margin-bottom: 30px;
+//     margin-left: 32px;
+//     margin-right: 32px;
+//   }
+// }
