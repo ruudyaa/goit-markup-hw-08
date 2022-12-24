@@ -8,7 +8,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-left: 93px;
   }
 }
@@ -16,7 +16,7 @@
 .navigation__list .navigation__item + .navigation__item {
   margin-left: 48px;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-left: 50px;
   }
 }

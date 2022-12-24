@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     flex-direction: row;
     align-items: baseline;
   }
@@ -23,7 +23,7 @@
     align-items: baseline;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
     align-items: baseline;
     margin-bottom: 0;
@@ -75,13 +75,13 @@
   @include additional-heading;
   color: $SecondaryHeadingColor;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     text-align: left;
   }
 }
 
 .footer__form {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-left: auto;
   }
 }
@@ -97,22 +97,19 @@
   @include additional-heading;
   color: $SecondaryHeadingColor;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     text-align: left;
   }
 }
 
 .subscription-form__field {
   display: block;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
   }
 }
 
 .subscription-form__field .subscription-form__input {
-  // width: 358px;
-  // width: 450px;
-  // height: 50px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -132,7 +129,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   outline: none;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 358px;
     margin-right: 12px;
   }

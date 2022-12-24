@@ -3,7 +3,7 @@
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0px;
+  padding: 200px 0px 280px;
   background-color: $AdditionalBgColor;
   background-image: linear-gradient(
       to right,
@@ -31,6 +31,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero-tab@1x.jpg);
+
     @include retina {
       background-image: linear-gradient(
           to right,
@@ -71,7 +72,7 @@
 
   color: $SecondaryHeadingColor;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     max-width: 696px;
 
     font-size: 44px;
@@ -86,7 +87,7 @@
   padding-right: 24px;
   padding-left: 24px;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding-right: 32px;
     padding-left: 32px;
   }
