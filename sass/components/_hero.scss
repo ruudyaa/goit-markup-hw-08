@@ -1,9 +1,8 @@
 .overlay {
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0px 280px;
+  padding: 118px 0px 118px;
   background-color: $AdditionalBgColor;
   background-image: linear-gradient(
       to right,
@@ -25,6 +24,7 @@
   }
 
   @include tablet {
+    padding: 118px 0px 118px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -43,6 +43,7 @@
   }
 
   @include desktop {
+    padding: 200px 0px 280px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
